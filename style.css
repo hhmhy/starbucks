@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,700&family=Roboto+Condensed:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Agbalumo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+section{
+    width: 100%;
+    min-height: 100vh;
+    padding: 100px;
+    display: flex;
+    justify-content: space-between;
+}
+nav{
+    position: absolute;
+    top: 0;
+    left: 35px;
+    /* min-height: 30px; */
+    width: 92%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+nav .logo img{
+    height: 10vh;
+    width: 5vw;
+    position: absolute;
+    top: 2px;
+    left: 24px;
+
+}
+nav ul{
+    padding: 45px;
+    margin-top: -3%;
+}
+nav ul li {
+    position:relative;
+    padding: 15px;
+    list-style: none;
+    display: inline-block;
+    font-weight: 800;
+}
+nav ul li a{
+    margin-left: 33px;
+    text-decoration: none;
+    display: inline-block;
+    font-weight: 400;
+    color: black
+}
+.content{
+    position: relative;
+    margin-top: -10%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.content .textbox{
+    position: relative;
+    width: 400px;
+    top: 25px;
+}
+.content .textbox h2{
+    font-family: Agbalumo;
+    font-size: 3.5em;
+    font-weight: 600;
+    line-height: 1.4em;
+}
+.content .textbox h2 span{
+    font-family: Agbalumo;
+    color: #017143;
+
+}
+.content .textbox p{
+    font-family: 'Merriweather', serif;
+    position: relative;
+    max-width: 500px;
+}
+.imgBox{
+    padding-right: 50px;
+    padding-top: 92px;
+    justify-content: flex-end;
+    display: flex;
+}
+.content .imgBox img{
+    max-width: 380px;
+}
+.content .textbox a{
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 20px;
+    padding: 9px 25px;
+    border-radius: 50px;
+    background: #017143;
+    color: #fff;
+    font-weight: 400;
+    /* font-size: 0.2rem; */
+    font-family: 'Dancing Script', cursive;
+}
+section .thumb{
+    list-style: none;
+    position: absolute;
+    left: 50%;
+    bottom: 20px;   
+    transform: translateX(-50%);
+    display: flex;
+    padding-top: 45px;
+}
+section .thumb li{
+    margin: 0px 20px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.thumb li:hover{
+    transform: translateY(-25%);
+}
+section .thumb li img{
+    max-width: 60px;
+}
+.social{
+    list-style: none;
+    text-decoration: none;
+    margin-top: 12%;
+}
+.social li{
+    margin: 30px 0;
+    transform: scale(0.6);
+    filter: invert(1);
+
+}
+.circle{
+    background: #017143;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    clip-path: circle(600px at right 800px);
+}
